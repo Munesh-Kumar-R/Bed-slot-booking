@@ -1,0 +1,74 @@
+{% extends 'hospitallogin.html' %}
+{% block title %} Patient details{% endblock title %}
+<style>
+     
+</style>
+{% block form %}
+
+
+<div class="row">
+<div class="col-md-4"></div>
+
+<div class="col-md-4">
+
+
+<br>
+<br>
+<h1>Patient Details</h1>
+<div class="card p-3">
+
+<table class="table table-dark">
+  <thead>
+  <tr>
+  <th scope="col">BOOKED DETAILS</th>
+   </tr>
+<tr>
+     <th scope="col"><span style="color:red;font-weight:1000;">SRF id: </span>{{data.srfid}}</th>
+</tr>
+<tr>
+
+      <th scope="col"><span style="color:red;font-weight:1000;">Booked BedType: </span>{{data.bedtype}}</th>
+</tr>
+<!-- <tr>
+
+      <th scope="col">{{data.bedtype}}</th>
+</tr> -->
+<tr>
+
+      <th scope="col"><span style="color:red;font-weight:1000;">Hospital code: </span>{{data.hcode}}</th>
+</tr>
+
+<tr>
+      <th scope="col"><span style="color:red;font-weight:1000;">SP02 Level:</span> {{data.spo2}}</th>
+</tr>
+      <th scope="col"><span style="color:red;font-weight:1000;">Patient Name: </span>{{data.pname}}</th>
+</tr>
+<tr>
+
+      <th scope="col"><span style="color:red;font-weight:1000;">Patient Phone: </span>{{data.pphone}}</th>
+    </tr>
+
+     <tr> 
+      <th scope="col"><span style="color:red;font-weight:1000;">Patient Address: </span>{{data.paddress}}</th>
+</tr>
+
+
+ 
+
+
+  </thead>
+
+
+      
+   
+    
+
+
+
+
+</div>
+</div>
+<div class="col-md-4"></div>
+
+</div>
+{% endblock form %}
